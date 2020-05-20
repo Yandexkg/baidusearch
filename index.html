@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content="Escher,Escher1108,vpn,v2ray,google,jkgblog,ssr">
+    <meta name="description" content="简单搜索页面,做大陆流氓浏览器主页,还你干净页面">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="icon" href="img/baidu.jpg" sizes="192x192">
+   <link rel="stylesheet" type="text/css" href="css/mystlye.css" charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="js/icons.js" crossorigin="anonymous"></script>
+    <title>百度一下</title>
+    <script type="text/javascript">
+        function Time() {
+            var date = new Date();
+            year = date.getFullYear();
+            month = date.getMonth() + 1;
+            day = date.getDate();
+            hours = date.getHours();
+            minutes = date.getMinutes();
+            seconds = date.getSeconds();
+            if (minutes < 10) {
+                minutes = "0" + minutes;
+            }
+            titleText.innerText = hours + ":" + minutes;
+            currentTime = year + "年" + month + "月" + day + "日 " + hours + ":" + minutes;
+        };setInterval("Time()", 1000);
+
+        $(function(){
+            if(navigator.userAgent.match(/mobile/i)) {
+                top.location='m.html';
+            }
+        });
+		console.log("POWERED BY Escher1108 | GITHUB.COM")
+    </script>
+</head>
+<body id="body">
+<div class="container-fluid">
+    <div class="row">
+        <div class="search-box">
+            <h2 id="titleText" onmouseover="timer()" onmouseout="timer()"></h2>
+            <div class="form">
+                <form role="form" action="https://www.baidu.com/s" target="_blank" method="get">
+                    <div class="form-group">
+                        <input  class="form-control" type="text" name="word" size="40" maxlength="255"
+                               placeholder="Search">
+                    </div>
+                </form>
+            </div>
+            <section class="nav">
+                <ul>
+                    <li class=""><a href="https://twitter.com/" class="tw" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                    <li class=""><a href="https://www.instagram.com/" class="ig" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                    <li class=""><a href="https://www.youtube.com/" class="yg" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                </ul>
+            </section>
+        </div>
+    </div>
+    <footer class="search-footer">
+        <a class="" href="https://jkgblog.com/" target="_blank">© 2020 Escher' Log</a>
+    </footer>
+</div>
+<div id="fade" class="black_overlay"></div>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="js/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>

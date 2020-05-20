@@ -1,0 +1,158 @@
+body {
+            background-image: url(https://w.0x77.ml/bing);
+            /* background: url(https://random.52ecy.cn/randbg.php) no-repeat center center fixed; */
+			/* background-color: #ffaa00; */
+            background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            -webkit-background-size: cover;
+            height: auto;
+            width: 100%;
+            position: absolute;
+            overflow: hidden;
+        }
+
+        .search-box{
+            /*border: 1px solid red;*/
+            background: #00000005;
+            border-radius: 15px;
+            width: auto;
+            height: 200px;
+            margin: 250px auto;  /*两位值：先上下，后左右*/
+            /*margin-top: 15%;*/
+            text-align: center;
+        }
+
+        .search-box .form{
+            margin-top: 6%;
+        }
+
+        .search-box h2{
+            background: linear-gradient(to right, red, blue);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        .search-box input{
+            /* background: #00000020; */
+            border: 0;
+        }
+
+        .search-box input::-webkit-input-placeholder {
+            text-align: center;
+            font-family: 宋体;
+            font-size: 20px;
+            line-height: 1em;
+            background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        .search-footer{
+            text-align: center;
+        }
+        .search-footer a{
+            color: #7be7ff;
+            font-family: "monotype corsiva" !important;
+        }
+        .search-footer a:hover{
+            text-decoration: none;
+            /* font-size:large ; */
+        }
+
+        .form-control {
+            border-radius: 20px 20px 20px 20px;
+        }
+
+        section ul{
+            list-style: none;
+
+        }
+        section ul li{
+            float: left;
+            /*margin-left: 70px;*/
+            margin: 30px 35px;
+        }
+
+        section a{
+            font-size: 1.5rem;
+        }
+
+        /* section a:hover{
+            font-size: 2.0rem;
+            color: black;
+        } */
+
+        .tw{
+            color: royalblue;
+        }
+        .ig{
+            color: hotpink;
+        }
+        .yg{
+            color: #ff4836;
+        }
+        .set_up a{
+            color: black;
+            position: fixed;
+            border: 0
+            width: 5%;
+            height: 10%;
+            text-align: center;
+            margin: 10px 15px;
+            font-size: 1.3rem;
+
+        }
+        .set_up a:hover{
+            position: fixed;
+            color: #dd5dd3;
+            font-size: 2.0rem;
+
+        }
+
+        .black_overlay{
+            display: none;
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            z-index:1001;
+            -moz-opacity: 0.8;
+            opacity:.80;
+            filter: alpha(opacity=88);
+        }
+        .white_content {
+            display: none;
+            position: absolute;
+            top: 25%;
+            left: 25%;
+            width: 55%;
+            height: 55%;
+            padding: 20px;
+            border: 10px solid orange;
+            background-color: white;
+            z-index:1002;
+            overflow: auto;
+            text-align: center;
+        }
+        .white_content img{
+            position: relative;
+            margin: 2% 5%;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+
+        }
+        .white_content img:hover{
+            transform: scale(1.5);
+        }
+        .white_content a{
+            color: red;
+            text-decoration: none;
+            font-size: 1.5rem;
+        }
+        .white_content a:hover{
+            font-size: 2.0rem;
+        }

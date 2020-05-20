@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="keywords" content="Escher,Escher1108,vpn,v2ray,google,jkgblog,ssr">
+    <meta name="description" content="简单搜索页面,做大陆流氓浏览器主页,还你干净页面">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="icon" href="img/baidu.jpg" sizes="192x192">
+    <!--    <link rel="stylesheet" type="text/css" href="css/2.css" charset="UTF-8">-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="js/icons.js" crossorigin="anonymous"></script>
+    <title>Baidu</title>
+    <script type="text/javascript">
+        function Time() {
+            var date = new Date();
+            year = date.getFullYear();
+            month = date.getMonth() + 1;
+            day = date.getDate();
+            hours = date.getHours();
+            minutes = date.getMinutes();
+            seconds = date.getSeconds();
+            if (minutes < 10) {
+                minutes = "0" + minutes;
+            }
+            titleText.innerText = hours + ":" + minutes;
+            currentTime = year + "年" + month + "月" + day + "日 " + hours + ":" + minutes;
+        };setInterval("Time()", 1000);
+
+        function setcolor(obj) {
+            if( obj.value!="test" ){
+                document.getElementById("inputbox").className= "input_s1";
+            }else{
+                document.getElementById("inputbox").className = "input_s2";
+            }
+        }
+    </script>
+    <style type="text/css">
+        body{
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: auto;
+            background: url(https://random.52ecy.cn/randbg.php) no-repeat center center fixed;
+            background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            -webkit-background-size: cover;
+            overflow: hidden;
+        }
+        .search-box{
+            /*border: 1px solid red;*/
+            margin: 200px auto;
+            text-align: center;
+            width: auto;
+            top:0;
+            left:0;
+        }
+        .search-box input::-webkit-input-placeholder {
+            text-align: center;
+            font-family: 宋体;
+            font-size: 20px;
+            line-height: 1em;
+            background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+        .search-box input{
+            height: 35px;
+            width: 50%;
+            margin-top: 10px;
+            background: #00000040;
+            border-radius: 20px 20px 20px 20px;
+            border: 0;
+        }
+
+        .search-box input:hover{
+            height: 35px;
+            width: 100%;
+            margin-top: 10px;
+            background: #00000040;
+            border-radius: 20px 20px 20px 20px;
+            border: 0;
+        }
+
+        .input_s1 {
+            font-size: 1.0rem;
+            color: #e9ff11;
+            border-radius: 20px 20px 20px 20px;
+            text-align: center;
+        }
+
+        .input_s2 {
+            font-size: 20;
+            color: black;
+            border-radius: 20px 20px 20px 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="search-box">
+            <h2 id="titleText"></h2>
+            <form role="form" action="https://www.baidu.com/s" target="_blank" method="get">
+                <div class="form-group">
+                    <input class="input_s1" type="text" name="word" size="40" maxlength="255" placeholder="Search" id="inputbox" onclick="setcolor(this)"/>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
