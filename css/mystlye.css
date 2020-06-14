@@ -1,14 +1,12 @@
 body {
-            background-image: url(https://w.0x77.ml/bing);
-            /* background: url(https://random.52ecy.cn/randbg.php) no-repeat center center fixed; */
-			/* background-color: #ffaa00; */
+            background: url(https://w.0x77.ml/bing) no-repeat;
             background-size: cover;
             -moz-background-size: cover;
             -o-background-size: cover;
             -webkit-background-size: cover;
-            height: auto;
+            height: 100%;
             width: 100%;
-            position: absolute;
+            position: relative;
             overflow: hidden;
         }
 
